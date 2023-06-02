@@ -9,77 +9,238 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="dashboard menuItem">
-            <i class="material-icons">toc</i>
-            <h1>Dashboard</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">home</i>
-            <h1>Home</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">badge</i>
-            <h1>Profile</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">chat</i>
-            <h1>Messages</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">history</i>
-            <h1>History</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">task</i>
-            <h1>Tasks</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">groups</i>
-            <h1>Communites</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">settings</i>
-            <h1>Settings</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">support_agent</i>
-            <h1>Support</h1>
-        </div>
-        <div class="menuItem">
-            <i class="material-icons">verified_user</i>
-            <h1>Privacy</h1>
-        </div>
-    </div>
+    <div class="grid-container">
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <!-- Top Section -->
-        <div class="nav-top">
-            <div class="search-bar">
-                <div class="menuItem">
-                    <i class="material-icons">search</i>
-                </div>
-                <input type="text" name="search" autocomplete="off">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSideBar()">
+                <span class="material-icons">menu</span>
             </div>
-            <div class="profile">
-                <div class="menuIcon">
-                    <i class="material-icons">notifications_active</i>
-                </div>
-                <div class="avatar">
-                    <i class="material-icons">account_circle</i>
-                </div>
+            <div class="header-left">
+                <span class="material-icons">search</span>
+                <input type="text" class="search" autocomplete="off">
+            </div>
+            <div class="header-right">
+                <span class="material-icons">notifications_active</span>
+                <span class="material-icons account-profile">account_circle</span>
                 <p class="userName">User</p>
             </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons">toc</span> <i class="material-icons">dashboard</i> Dashboard
+                </div>
+                <span class="material-icons" onclick="closeSideBar()">close</span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">home</span>Home</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">badge</span>Profile</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">chat</span>Messages</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">history</span>History</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">task</span>Tasks</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">groups</span>Communities</a>
+                </li>
+                </ul>
+            <ul class="sidebar-seperated">
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">settings</span>Settings</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">support_agent</span>Support</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#"><span class="material-icons">verified_user</span>Privacy</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-container">
+            <div class="main-title">
+                <h2>Statistics</h2>
+            </div>
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>LIKES</h2>
+                        <span class="material-icons">recommend</span>
+                    </div>
+                    <h1>4,021</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>SUBSCRIBERS</h2>
+                        <span class="material-icons">subscriptions</span>
+                    </div>
+                    <h1>4,021</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>FOLLOWERS</h2>
+                        <span class="material-icons">groups</span>
+                    </div>
+                    <h1>6,121</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>Messages</h2>
+                        <span class="material-icons">forum</span>
+                    </div>
+                    <h1>8,200</h1>
+                </div>
+            </div>
+        <h2>Your Projects</h2>
+        <div class="content-container">
+            <div class="projects-container">
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-card">
+                <div class="projects-description">
+                  <h3 class="card-title">Super Cool Project</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <div class="icons">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">visibility</i>
+                    <i class="material-icons">code</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side-content">
+                <h3>Announcements</h3>
+                <div class="ann-card">
+                    <div class="ann-text">
+                        <h5>Site Maintenance</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="divider"></div>
+                        <div class="ann-text">
+                            <h5 class="card-title">Community Share Day</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="divider"></div>
+                            <div class="ann-text">
+                                <h5 class="card-title">Updated Privacy Policy</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+              <div class="trending">
+                <h3>Trending</h3>
+            <div class="trending-card">
+                <div class="trend-text">
+                    <i class="material-icons">account_box</i>
+                    <div class="account-text">
+                        <h5>@tegan</h5>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trend-text">
+                    <i class="material-icons">account_box</i>
+                    <div class="account-text">
+                        <h5>@morgan</h5>
+                        <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trend-text">
+                    <i class="material-icons">account_box</i>
+                    <div class="account-text">
+                        <h5>@kendall</h5>
+                        <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trend-text">
+                    <i class="material-icons">account_box</i>
+                    <div class="account-text">
+                        <h5>@alex</h5>
+                        <p>No Traffic Maker</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Bottom Section  -->
-        <div class="nav-bottom">
+    </div>
+</div>
+    </main>
+    <!--
+    <div class="main">
+    <div class="header">
+        <div class="navbar">
+            <i class="material-icons">search</i>
+            <input type="text" class="form-input" autocomplete="off">
+            <i class="material-icons">notifications_active</i>
+            <i class="material-icons account-profile">account_circle</i>
+            <p class="userName">User</p>
+        </div>
+        <div class="welcome">
             <div class="account">
-                <i class="material-icons">face</i>
-                <div class="account-name">
-                    <p class="welcome">Welcome, </p>
-                    <p class="name">User <span class="username">(@user)</span></p>
+                <i class="material-icons account-welcome">face</i>
+                <div class="welcome-text">
+                    <p>Welcome, </p>
+                    <h3 class="name">User <span class="username">(@user)</span></h3>
                 </div>
             </div>
             <div class="buttons">
@@ -89,11 +250,9 @@
             </div>
         </div>
     </div>
-
-    <!-- Main Section -->
-    <main class="container">
-        <div class="projects">
-            <h3>Your Projects</h3>
+        <div class="content">
+            <div class="projects">
+                <h3>Your Projects</h3>
             <div class="cards">
                 <div class="card">
                     <h5 class="card-title">Super Cool Project</h5>
@@ -169,8 +328,67 @@
                 </div>
             </div>
         </div>
-
-        <!-- Side Section -->
-    </main>
+        <div class="side-content">
+        <div class="annoucements">
+            <h3>Announcements</h3>
+            <div class="announcement-card">
+                <div class="announcement-text">
+                    <h5>Site Maintenance</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="divider"></div>
+                <div class="announcement-card">
+                    <div class="announcement-text">
+                        <h5 class="card-title">Community Share Day</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="announcement-card">
+                        <div class="announcement-text">
+                            <h5 class="card-title">Updated Privacy Policy</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trending">
+            <h3>Trending</h3>
+        <div class="trending-card">
+            <div class="trend-text">
+                <i class="material-icons">account_box</i>
+                <div class="account-text">
+                    <h5>@tegan</h5>
+                    <p>World Peace Builder</p>
+                </div>
+            </div>
+            <div class="trend-text">
+                <i class="material-icons">account_box</i>
+                <div class="account-text">
+                    <h5>@morgan</h5>
+                    <p>Super Cool Project</p>
+                </div>
+            </div>
+            <div class="trend-text">
+                <i class="material-icons">account_box</i>
+                <div class="account-text">
+                    <h5>@kendall</h5>
+                    <p>Life Changing App</p>
+                </div>
+            </div>
+            <div class="trend-text">
+                <i class="material-icons">account_box</i>
+                <div class="account-text">
+                    <h5>@alex</h5>
+                    <p>No Traffic Maker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div> -->
+<script src="script.js"></script>
 </body>
 </html>
