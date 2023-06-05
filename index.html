@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="grid-container">
 
         <!-- Header -->
-        <header class="header">
+    <header class="header">
+        <div class="top-header">
             <div class="menu-icon" onclick="openSideBar()">
                 <span class="material-icons">menu</span>
             </div>
@@ -21,11 +22,28 @@
                 <input type="text" class="search" autocomplete="off">
             </div>
             <div class="header-right">
-                <span class="material-icons">notifications_active</span>
+                <span class="material-icons-outlined">notifications_active</span>
                 <span class="material-icons account-profile">account_circle</span>
-                <p class="userName">User</p>
+                <p class="username">User</p>
             </div>
-        </header>
+        </div>
+        <div class="bottom-header">
+            <div class="welcome">
+                <div class="account">
+                    <i class="material-icons account-welcome">account_circle</i>
+                    <div class="welcome-text">
+                        <p>Welcome, </p>
+                        <h3 class="name">User <span class="username">(@user)</span></h3>
+                    </div>
+                </div>
+            </div>
+                <div class="buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </div>
+    </header>
 
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -67,328 +85,203 @@
                 </li>
             </ul>
         </aside>
+
+        <!-- Main Container -->
         <main class="main-container">
             <div class="main-title">
-                <h2>Statistics</h2>
+                <h2>Projects Overview</h2>
             </div>
             <div class="main-cards">
                 <div class="card">
                     <div class="card-inner">
-                        <h2>LIKES</h2>
-                        <span class="material-icons">recommend</span>
+                        <span class="material-icons" style="color: green;">recommend</span>
+                        <h2>Open</h2>
                     </div>
-                    <h1>4,021</h1>
+                    <h1>6</h1>
                 </div>
                 <div class="card">
                     <div class="card-inner">
-                        <h2>SUBSCRIBERS</h2>
-                        <span class="material-icons">subscriptions</span>
+                        <span class="material-icons" style="color: red;">cancel</span>
+                        <h2>Closed</h2>
                     </div>
-                    <h1>4,021</h1>
+                    <h1>68</h1>
                 </div>
                 <div class="card">
                     <div class="card-inner">
-                        <h2>FOLLOWERS</h2>
-                        <span class="material-icons">groups</span>
+                        <span class="material-icons" style="color: #429DFF;">back_hand</span>
+                        <h2>On Hold</h2>
                     </div>
-                    <h1>6,121</h1>
+                    <h1>5</h1>
                 </div>
                 <div class="card">
                     <div class="card-inner">
-                        <h2>Messages</h2>
-                        <span class="material-icons">forum</span>
+                        <span class="material-icons" style="color: orange;">error</span>
+                        <h2>Overdue</h2>
                     </div>
-                    <h1>8,200</h1>
+                    <h1>12</h1>
                 </div>
             </div>
+
+        <!-- Projects Section -->
         <h2>Your Projects</h2>
         <div class="content-container">
             <div class="projects-container">
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">ACME Corp Website Redesign</h3>
+                  <p class="card-text">Redesign and develop the Acme Corp website to 
+                    improve user experience and increase conversions.</p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">Online Store Development</h3>
+                  <p class="card-text">Develop an e-commerce platform for a retail 
+                    company to sell their products online.</p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">Blog Platform Integration</h3>
+                  <p class="card-text">Integrate a blog platform into an existing 
+                    website to allow for easy content creation and publishing.</p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">Mobile App Development</h3>
+                  <p class="card-text">Develop a mobile app for a company to provide 
+                    their services to customers on-the-go.</p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">SEO Optimization</h3>
+                  <p class="card-text">Optimize a website for search engines to 
+                    improve its visibility and increase organic traffic.</p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
               <div class="projects-card">
                 <div class="projects-description">
-                  <h3 class="card-title">Super Cool Project</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque alias. Eos quia ullam nisi?</p>
+                  <h3 class="card-title">Social Media Integration</h3>
+                  <p class="card-text">Develop and integrate social media sharing and 
+                    login functionality into a website to improve user engagement and increase social media presence.
+                </p>
                   <div class="icons">
-                    <i class="material-icons">grade</i>
-                    <i class="material-icons">visibility</i>
-                    <i class="material-icons">code</i>
+                    <i class="material-icons-outlined">grade</i>
+                    <i class="material-icons-outlined">visibility</i>
+                    <i class="material-icons-outlined">open_in_new</i>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Side Content -->
             <div class="side-content">
+
+            <!-- Announcements Section -->
                 <h3>Announcements</h3>
                 <div class="ann-card">
                     <div class="ann-text">
                         <h5>Site Maintenance</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <p>Our website will be undergoing scheduled maintenance on 
+                            10/06/2023 from 10:00PM to 2:00AM. 
+                            <br><br>
+                            During this time, the website will be unavailable.</p>
+                        <hr>
                     </div>
                     <div class="divider"></div>
                         <div class="ann-text">
                             <h5 class="card-title">Community Share Day</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                            <p class="card-text">We are excited to announce 
+                                that we will be hosting a Community Share Day on 
+                                6/06/2023 at the Community Centre!
+                                <br><br>
+                                This event is an opportunity 
+                                for members of our community to come together and 
+                                share their skills, knowledge, and experiences with 
+                                one another.</p>
+                            <hr>
                         </div>
                         <div class="divider"></div>
                             <div class="ann-text">
                                 <h5 class="card-title">Updated Privacy Policy</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+                                <p class="card-text">We would like to inform you that 
+                                    we have recently updated our Privacy Policy. The 
+                                    updated policy reflects our ongoing commitment to 
+                                    protecting your personal information and being 
+                                    transparent about how we use it.
+                                    <br><br>
+                                    We encourage you to review the updated Privacy 
+                                    Policy, which is available on our website. 
+                                    If you have any questions or concerns, please do 
+                                    not hesitate to contact us.
+                                    </p>
                             </div>
                         </div>
-              <div class="trending">
+            
+            <!-- Trending Section -->
+            <div class="trending">
                 <h3>Trending</h3>
-            <div class="trending-card">
-                <div class="trend-text">
-                    <i class="material-icons">account_box</i>
+                <div class="trending-card">
+                    <div class="trend-text">
+                        <i class="material-icons">account_box</i>
                     <div class="account-text">
                         <h5>@tegan</h5>
-                        <p>World Peace Builder</p>
+                        <p>Back-End Developer</p>
                     </div>
                 </div>
                 <div class="trend-text">
                     <i class="material-icons">account_box</i>
                     <div class="account-text">
                         <h5>@morgan</h5>
-                        <p>Super Cool Project</p>
+                        <p>Front-End Developer</p>
                     </div>
                 </div>
                 <div class="trend-text">
                     <i class="material-icons">account_box</i>
                     <div class="account-text">
                         <h5>@kendall</h5>
-                        <p>Life Changing App</p>
+                        <p>UX/UI Designer</p>
                     </div>
                 </div>
                 <div class="trend-text">
                     <i class="material-icons">account_box</i>
                     <div class="account-text">
                         <h5>@alex</h5>
-                        <p>No Traffic Maker</p>
+                        <p>Graphic Designer</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    </main>
-    <!--
-    <div class="main">
-    <div class="header">
-        <div class="navbar">
-            <i class="material-icons">search</i>
-            <input type="text" class="form-input" autocomplete="off">
-            <i class="material-icons">notifications_active</i>
-            <i class="material-icons account-profile">account_circle</i>
-            <p class="userName">User</p>
-        </div>
-        <div class="welcome">
-            <div class="account">
-                <i class="material-icons account-welcome">face</i>
-                <div class="welcome-text">
-                    <p>Welcome, </p>
-                    <h3 class="name">User <span class="username">(@user)</span></h3>
-                </div>
-            </div>
-            <div class="buttons">
-                <button class="btn">New</button>
-                <button class="btn">Upload</button>
-                <button class="btn">Share</button>
-            </div>
-        </div>
-    </div>
-        <div class="content">
-            <div class="projects">
-                <h3>Your Projects</h3>
-            <div class="cards">
-                <div class="card">
-                    <h5 class="card-title">Super Cool Project</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-title">Less Cool Project</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-title">Impossible App</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-title">Easy Peasy App</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-title">Ad Blocker</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-title">Money Maker</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptatibus, doloremque alias. 
-                        Eos quia ullam nisi?
-                    </p>
-                    <div class="icons">
-                        <i class="material-icons">grade</i>
-                        <i class="material-icons">visibility</i>
-                        <i class="material-icons">code</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="side-content">
-        <div class="annoucements">
-            <h3>Announcements</h3>
-            <div class="announcement-card">
-                <div class="announcement-text">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur</p>
-                </div>
-                <div class="divider"></div>
-                <div class="announcement-card">
-                    <div class="announcement-text">
-                        <h5 class="card-title">Community Share Day</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="announcement-card">
-                        <div class="announcement-text">
-                            <h5 class="card-title">Updated Privacy Policy</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="trending">
-            <h3>Trending</h3>
-        <div class="trending-card">
-            <div class="trend-text">
-                <i class="material-icons">account_box</i>
-                <div class="account-text">
-                    <h5>@tegan</h5>
-                    <p>World Peace Builder</p>
-                </div>
-            </div>
-            <div class="trend-text">
-                <i class="material-icons">account_box</i>
-                <div class="account-text">
-                    <h5>@morgan</h5>
-                    <p>Super Cool Project</p>
-                </div>
-            </div>
-            <div class="trend-text">
-                <i class="material-icons">account_box</i>
-                <div class="account-text">
-                    <h5>@kendall</h5>
-                    <p>Life Changing App</p>
-                </div>
-            </div>
-            <div class="trend-text">
-                <i class="material-icons">account_box</i>
-                <div class="account-text">
-                    <h5>@alex</h5>
-                    <p>No Traffic Maker</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div> -->
+</main>
 <script src="script.js"></script>
 </body>
 </html>
