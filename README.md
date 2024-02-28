@@ -14,16 +14,7 @@ A Modern Design of an Admin Dashboard primarily showcasing the use of CSS Grid.
 ## Screenshots
 
 ### Initial Screen
-![](screenshots/initial-screen-etch-a-sketch.png)
-
-### Colour Mode
-![](screenshots/colour-mode-etch-a-sketch.png)
-
-### Rainbow Mode
-![](screenshots/rainbow-mode-etch-a-sketch.png)
-
-### Grid Adjustability
-![](screenshots/grid-adjustability-etch-a-sketch.png)
+![](screenshots/initial-screen-admin-dashboard.png)
 
 [Back to Top](#admin-dashboard)
 
