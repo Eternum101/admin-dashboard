@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-View Demo
+🔗 [View Demo](https://eternum101.github.io/admin-dashboard/)
 
 ## Table of Contents
 - [About The Project](#about-the-project)
